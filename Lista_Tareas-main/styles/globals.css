@@ -1,0 +1,261 @@
+/* INDEX.JS */
+.index{
+    background: rgb(255,99,99);
+    background: linear-gradient(90deg, rgba(255,99,99,1) 0%, rgba(48,143,179,1) 49%, rgba(0,111,164,1) 100%);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.index.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.links {
+    display: flex;
+    background: rgb(255,99,99);
+    background: linear-gradient(90deg, rgba(255,99,99,1) 0%, rgba(48,143,179,1) 49%, rgba(0,111,164,1) 100%);
+    padding: 5px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+}
+
+.link1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Verdana', 'sans-serif';
+    text-decoration: none;
+    margin: 0px, 30px;
+    margin-top: 25px;
+    padding: 5px;
+    color: rgba(0,111,164,1);
+}
+.link2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Verdana', 'sans-serif';
+    text-decoration: none;
+    margin-left: 1020px;
+    margin-top: 25px;
+    padding: 5px;
+    color: rgba(255,99,99,1) ;
+}
+
+h2, h3, .link1, .link2, .boton-tarea, .buscar-tarea {
+    transform: translateY(-20px);
+    transition: opacity 0.5s, transform 1s;
+}
+
+h2.active, h3.active, .link1.active, .link2.active, .boton-tarea.active, .buscar-tarea.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tareas {
+    margin-left: 45%;
+    font-family: 'Vegur', 'PT Sans', Verdana, sans-serif;
+
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .index.animate {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+.titulo {
+    margin-left: 2%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Verdana', 'sans-serif';
+}
+.descripcion {
+    margin-left: 2%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Verdana', 'sans-serif';
+}
+
+.boton-tarea {
+    margin-left: 46%;
+    margin-top: 1.5%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+}
+
+.mostrar-tareas-completas1 {
+    margin-left: 25%;
+    margin-top: 3%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Verdana', 'sans-serif';
+}
+.mostrar-tareas-completas2 {
+    margin-top: 2%;
+}
+
+.tareas-lista {
+    margin-bottom: 3%;
+    font-family: 'PT Sans', Verdana, 'sans-serif';
+}
+
+.guardar {
+    font-family: 'Vegur', 'PT Sans', Verdana, sans-serif;
+    font-weight: 800;
+    width: 20%;
+    margin-left: 1%;
+}
+
+.completar {
+    font-family: 'Vegur', 'PT Sans', Verdana, sans-serif;
+    font-weight: 800;
+    width: 15%;
+    margin-left: 1%;
+}
+
+.eliminar {
+    font-family: 'Vegur', 'PT Sans', Verdana, sans-serif;
+    font-weight: 800;
+    margin-left: 1%;
+    width: 11%;
+}
+.editar {
+    font-family: 'Vegur', 'PT Sans', Verdana, sans-serif;
+    font-weight: 800;
+    width: 11%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.crear-tareas {
+    font-family: 'Vegur', 'PT Sans', Verdana, sans-serif;
+    font-weight: 800;
+    width: 9%;
+    margin-left: 44.2%;
+}
+
+.crear-tareas:hover {
+    background: rgb(232, 19, 168);
+    background: linear-gradient(90deg, rgb(111, 1, 78) 0%, rgb(133, 34, 103) 100%);
+    color: rgb(232, 19, 168);
+}
+
+.completar:hover {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(78, 77, 77) 100%);
+    color: rgb(255, 255, 255);
+}
+
+.eliminar:hover {
+    background: rgb(83,7,7);
+    background: linear-gradient(90deg, rgb(95, 15, 15) 0%, rgb(132, 2, 2) 100%);
+    color: rgb(255, 0, 0);
+}
+
+.editar:hover {
+    background: rgb(8,255,252);
+    background: linear-gradient(90deg, rgb(7, 228, 224) 0%, rgba(0,61,164,1) 100%);
+    color: rgb(0, 255, 0);
+}
+
+.guardar:hover {
+    background: rgb(16,8,255);
+    background: linear-gradient(90deg, rgba(16,8,255,1) 0%, rgba(94,131,195,1) 100%);
+    color: rgb(255, 145, 0)
+}
+
+.boton-tarea:hover {
+    background: rgb(103,8,255);
+    background: linear-gradient(90deg, rgb(100, 3, 255) 0%, rgb(114, 37, 118) 100%);
+    color: rgb(219, 34, 182)
+}
+
+.input-descripcion {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    background: rgb(250, 50, 50);
+    background: linear-gradient(90deg, rgb(255, 71, 71) 0%, rgba(227,3,188,1) 100%);
+    color:aqua ;
+}
+
+.input-titulo {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    background: rgb(250, 50, 50);
+    background: linear-gradient(90deg, rgb(255, 71, 71) 0%, rgba(227,3,188,1) 100%);
+    color:aqua ;
+}
+
+.buscar-tarea {
+    margin-left: 2%;
+    background: rgb(241, 117, 214);
+    background: radial-gradient(circle, rgb(185, 4, 164) 0%, rgb(74, 6, 114) 100%);
+    color: white;
+}
+
+.ordenar-fecha-titulo{
+    margin-left: 1%;
+}
+.ordenar-fecha:hover{
+    background: rgb(103,8,255);
+    background: linear-gradient(90deg, rgb(100, 3, 255) 0%, rgb(114, 37, 118) 100%);
+    color: white;
+}
+
+.nuevas-viejas{
+    color: rgb(0, 4, 255);
+}
+.viejas-nuevas{
+    color: red;
+}
+
+/* REGISTER.JSX */
+.registro{
+    background: rgb(157,157,157);
+    background: linear-gradient(90deg, rgba(157,157,157,1) 0%, rgba(88,88,88,1) 100%);
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+.registro.active{
+    opacity: 1;
+  transform: translateX(0);
+}
+
+.link3 {
+    margin: 2%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Verdana', 'sans-serif';
+}
+.linkDjango {
+    margin-left: 40%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Verdana', 'sans-serif';
+}
+
+.titulo-registro {
+    margin-left: 45%;
+    font-family: 'Vegur', 'PT Sans', Verdana, sans-serif;
+}
+
+/* INICIAR SESIÓN */
+.iniciar-sesion{
+    background: rgb(49,196,227);
+    background: radial-gradient(circle, rgba(49,196,227,1) 0%, rgba(229,140,255,1) 100%);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.iniciar-sesion.active{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.link4 {
+    margin: 2%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Verdana', 'sans-serif';
+}
+
+.linkDjango2 {
+    margin-left: 38%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Verdana', 'sans-serif';
+}
+
+.titulo-iniciar-sesion {
+    margin-left: 42%;
+    font-family: 'Vegur', 'PT Sans', Verdana, sans-serif;
+}
